@@ -9,8 +9,13 @@ let package = Package(
             name: "NodeInfo",
             targets: ["NodeInfo"]),
     ],
+    dependencies: [
+        .package(url: "https://github.com/sinoru/swift-json-value.git", from: "0.0.5")
+    ],
     targets: [
-        .target(name: "NodeInfo"),
+        .target(
+            name: "NodeInfo",
+            dependencies: [.product(name: "JSONValue", package: "swift-json-value")]),
         .testTarget(
             name: "NodeInfoTests",
             dependencies: ["NodeInfo"]),
