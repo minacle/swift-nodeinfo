@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "swift-json-value",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/sinoru/swift-json-value.git",
+      "state" : {
+        "revision" : "eab90dfc8420b7506c3cd786e2deb300f79179eb",
+        "version" : "0.0.5"
+      }
+    }
+  ],
+  "version" : 2
+}
